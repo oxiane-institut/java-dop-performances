@@ -9,5 +9,5 @@ Requires JDK 24.
 Run :
 ```
 mvn clean verify
-java -jar target/bencmarks.jar
+java -jar target/benchmarks.jar
 ``` 
