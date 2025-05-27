@@ -18,7 +18,7 @@ public class EventProcessor {
     return switch(event) {
       case Event.TemperatureEvent(double t, _) when t > HIGHEST_TEMP -> LOGGER::warning;
       case Event.PressureEvent(double p, _) when p > HIGHEST_PRESSURE -> LOGGER::warning;
-      default -> LOGGER::info;
+      case Event _ -> LOGGER::info;
     };
   }
 
